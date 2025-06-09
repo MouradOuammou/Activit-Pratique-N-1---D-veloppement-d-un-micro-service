@@ -7,4 +7,5 @@ import org.springframework.data.rest.core.config.Projection;
 public interface AccountProjection {
     public String getId();
     public AccountType getAccountType();
+    public Double getBalance();
 }
