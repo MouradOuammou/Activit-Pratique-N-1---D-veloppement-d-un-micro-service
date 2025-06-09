@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
+@RequestMapping("/api")
 public class AccountRestController {
 
     private BankAccountRepository repository;
