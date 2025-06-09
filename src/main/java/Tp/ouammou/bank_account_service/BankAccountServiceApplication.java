@@ -27,7 +27,7 @@ public class BankAccountServiceApplication {
 								.creationDate(new Date())
 								.balance(1000 + i * 100)
 								.accountType(i % 2 == 0 ? "CURRENT_ACCOUNT" : "SAVINGS_ACCOUNT")
-								.currency("USD")
+								.currency("MAD")
 								.build()
 				);
 			}
