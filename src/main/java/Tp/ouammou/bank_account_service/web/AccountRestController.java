@@ -5,6 +5,7 @@ import Tp.ouammou.bank_account_service.repositories.BankAccountRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 public class AccountRestController {
@@ -22,6 +23,9 @@ public class AccountRestController {
     }
     @PostMapping("/bankAccounts")
     public BankAccount saveBankAccount(@RequestBody BankAccount bankAccount) {
+        if (bankAccount.getId() == null) {
+            bankAccount.setId(UUID.randomUUID().toString() + "-" + bankAccount.getId());
+        }
         return repository.save(bankAccount);
     }
     @PutMapping("/bankAccounts/{Id}")

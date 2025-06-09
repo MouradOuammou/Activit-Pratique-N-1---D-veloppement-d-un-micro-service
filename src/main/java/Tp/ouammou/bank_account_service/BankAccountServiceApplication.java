@@ -25,7 +25,7 @@ public class BankAccountServiceApplication {
 						BankAccount.builder()
 								.Id("BA" + i)
 								.creationDate(new Date())
-								.balance(1000 + i * 100)
+								.balance((double) (1000 + i * 100))
 								.accountType(i % 2 == 0 ? "CURRENT_ACCOUNT" : "SAVINGS_ACCOUNT")
 								.currency("MAD")
 								.build()
