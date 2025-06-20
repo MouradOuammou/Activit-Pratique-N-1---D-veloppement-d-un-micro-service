@@ -1,11 +1,10 @@
-package Tp.ouammou.bank_account_service.dto;
+package tp.ouammou.bankbankaccountservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 
 @Data
 @NoArgsConstructor

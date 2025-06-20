@@ -1,15 +1,14 @@
-package Tp.ouammou.bank_account_service.web;
+package tp.ouammou.bankbankaccountservice.web;
 
-import Tp.ouammou.bank_account_service.dto.BankAccountRequestDTO;
-import Tp.ouammou.bank_account_service.dto.BankAccountResponseDTO;
-import Tp.ouammou.bank_account_service.entites.BankAccount;
-import Tp.ouammou.bank_account_service.mappers.AccountMapper;
-import Tp.ouammou.bank_account_service.repositories.BankAccountRepository;
-import Tp.ouammou.bank_account_service.service.BankAccountService;
+import tp.ouammou.bankbankaccountservice.dto.BankAccountRequestDTO;
+import tp.ouammou.bankbankaccountservice.dto.BankAccountResponseDTO;
+import tp.ouammou.bankbankaccountservice.entites.BankAccount;
+import tp.ouammou.bankbankaccountservice.mappers.AccountMapper;
+import tp.ouammou.bankbankaccountservice.repositories.BankAccountRepository;
+import tp.ouammou.bankbankaccountservice.service.BankAccountService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/api")

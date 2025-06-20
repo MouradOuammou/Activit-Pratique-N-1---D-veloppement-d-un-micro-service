@@ -1,10 +1,11 @@
-package Tp.ouammou.bank_account_service.service;
+package tp.ouammou.bankbankaccountservice.service;
 
-import Tp.ouammou.bank_account_service.dto.BankAccountRequestDTO;
-import Tp.ouammou.bank_account_service.dto.BankAccountResponseDTO;
-import Tp.ouammou.bank_account_service.entites.BankAccount;
-import Tp.ouammou.bank_account_service.mappers.AccountMapper;
-import Tp.ouammou.bank_account_service.repositories.BankAccountRepository;
+import tp.ouammou.bankbankaccountservice.dto.BankAccountRequestDTO;
+import tp.ouammou.bankbankaccountservice.dto.BankAccountResponseDTO;
+import tp.ouammou.bankbankaccountservice.entites.BankAccount;
+import tp.ouammou.bankbankaccountservice.enums.AccountType;
+import tp.ouammou.bankbankaccountservice.mappers.AccountMapper;
+import tp.ouammou.bankbankaccountservice.repositories.BankAccountRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,10 +25,10 @@ public class BankAccountServiceImpl implements BankAccountService {
     @Override
     public BankAccountResponseDTO addBankAccount(BankAccountRequestDTO bankAccountDTO) {
         BankAccount bankAccount = BankAccount.builder()
-                .Id(UUID.randomUUID().toString())
+                .id(UUID.randomUUID().toString())
                 .creationDate(new Date())
                 .balance(bankAccountDTO.getBalance())
-                .accountType(bankAccountDTO.getAccountType())
+                .accountType(AccountType.valueOf(bankAccountDTO.getAccountType()))
                 .currency(bankAccountDTO.getCurrency())
                 .build();
         BankAccount savedBankAccount = bankAccountRepository.save(bankAccount);

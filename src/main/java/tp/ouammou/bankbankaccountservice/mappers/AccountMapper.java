@@ -1,7 +1,7 @@
-package Tp.ouammou.bank_account_service.mappers;
+package tp.ouammou.bankbankaccountservice.mappers;
 
-import Tp.ouammou.bank_account_service.dto.BankAccountResponseDTO;
-import Tp.ouammou.bank_account_service.entites.BankAccount;
+import tp.ouammou.bankbankaccountservice.dto.BankAccountResponseDTO;
+import tp.ouammou.bankbankaccountservice.entites.BankAccount;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Component;
 

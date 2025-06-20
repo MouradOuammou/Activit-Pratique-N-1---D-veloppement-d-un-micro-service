@@ -1,4 +1,4 @@
-package Tp.ouammou.bank_account_service;
+package tp.ouammou.bankbankaccountservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

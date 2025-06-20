@@ -1,6 +1,6 @@
-package Tp.ouammou.bank_account_service.entites;
+package tp.ouammou.bankbankaccountservice.entites;
 
-import Tp.ouammou.bank_account_service.enums.AccountType;
+import tp.ouammou.bankbankaccountservice.enums.AccountType;
 import org.springframework.data.rest.core.config.Projection;
 
 @Projection(types = {BankAccount.class} , name = "p1")

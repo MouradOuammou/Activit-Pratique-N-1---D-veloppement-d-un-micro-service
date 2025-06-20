@@ -1,7 +1,7 @@
-package Tp.ouammou.bank_account_service.repositories;
+package tp.ouammou.bankbankaccountservice.repositories;
 
-import Tp.ouammou.bank_account_service.entites.BankAccount;
-import Tp.ouammou.bank_account_service.enums.AccountType;
+import tp.ouammou.bankbankaccountservice.entites.BankAccount;
+import tp.ouammou.bankbankaccountservice.enums.AccountType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
